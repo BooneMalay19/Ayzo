@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Natal da Aurora!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ff0000, #000);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .heart {
+  width: 2rem;  
+  height: 2rem;
+  background-image: url('Intro.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: float 3s ease-in-out infinite;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.heart:nth-child(odd) {
+  animation-duration: 3.5s;
+}
+
+.heart:nth-child(even) {
+  animation-duration: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .gallery p {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      color: #fff;
+      text-align: left;
+      position: relative;
+    }
+
+    .declaration {
+      font-size: 1.4rem;
+      margin-bottom: 40px;
+      color: #000;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 50px auto;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-container {
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .video-legend {
+      font-size: 1.2rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      margin-top: 10px;
+      text-align: center;
+      display: block;
+    }
+
+    .btn-surprise {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-surprise:hover {
+      background-color: #d45d5d;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 1rem;
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .declaration {
+        font-size: 1rem;
+      }
+
+      .video-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Música Romântica de Fundo -->
+  <audio id="romantic-audio" loop autoplay>
+    <source src="music.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <button id="toggle-music" class="btn btn-light" style="position: fixed; top: 20px; right: 20px;">
+    <i class="fas fa-pause"></i>
+  </button>
+
+  <!-- Corações em cada seção -->
+  <div class="heart-animation">
+    <i class="heart" style="top: 10%; left: 10%;"></i>
+    <i class="heart" style="top: 20%; left: 30%;"></i>
+    <i class="heart" style="top: 30%; left: 50%;"></i>
+    <i class="heart" style="top: 40%; left: 70%;"></i>
+    <i class="heart" style="top: 50%; left: 90%;"></i>
+    <i class="heart" style="top: 60%; left: 20%;"></i>
+  </div>
+
+  <!-- Declaração de Amor -->
+  <div class="container" data-aos="fade-up">
+    <h1>Feliz Natal para a mulher mais incrivel que conheci</h1>
+    <div class="declaration">
+      <p>Oi Aurora,</p>
+      <p>Hoje não é natal, porém por ser dia 21 eu considero um dia mais importante do que o próprio natal quando o assunto é sobre nós dois. Eu quero te desejar um feliz natal e ao mesmo tempo comemorar tudo que a gente passou, sinto sua falta</p>
+      <p>E quero aproveitar este presente como oportunidade de responder certas questões<p>
+      <p>Esses dias conversei muito comigo mesmo, sai um pouco de casa, e refleti bastante, porém isso só reforçou de que estou certo do meu pensamento.</p>
+      <p>Vi um vídeo nos seus stories quando precisei pegar mais fotos pra este presente onde uma moça diz que certas relacões precisam ser deixadas este ano</p>
+      <p>Pensei comigo mesmo e pra mim isso não entra em nossa questão  porque uma relacão ela também envolve a parte fisíca e lógica do presente, do presente frente a frente que no qual eu não tive oportunidade de ter, eu entendo tal ponto sobre a moça, porém discordo da ação disso em certas relacões.</p>
+      <p>Pra mim você contina sendo o que sempre compartilhei contigo</p>
+      <p>Porfavor Aproveite o presente</p>
+    </div>
+    <i class="heart" style="top: 0; left: 45%;"></i>
+  </div>
+
+  <!-- Galeria de Fotos -->
+  <div class="container gallery" data-aos="zoom-in">
+    <img src="MeAndYou.png" alt="Acho que isso é muito importante pra nós">
+    <p>Você continua sendo a melhor amiga que tenho, independente da quantidade de sentimento que você guarda, mesmo que talvez não sinta, ainda existe e é pra ela que estou fazendo.</p>
+    <img src="teatro.jpg" alt="Você tava linda esse dia">
+    <p></p>
+    <img src="car.jpg" alt="Primeira vez que fizemos algo juntos">
+    <p>Você sempre inovou em todo esse periodo, e me ensina como o teatro é bem gratificante, como ajudar as pessoas trás uma recompensa ainda maior, e como a espiritualidade vai além de um termo</p>
+    <img src="car2.jpg" alt="Ultima vez...">
+    <p>Suas mudanças de estilo repentinas sempre vai ser algo que vou olhar com olhos brilhando</p>
+    <img src="car4.jpg" alt="Vasco!">
+    <p>Suas maquiagens, cabelo, sempre vou discordar de quando você fala mal dele kkkkk!</p>
+    <i class="heart" style="top: 0; left: 50%;"></i>
+  </div>
+
+  <!-- Vídeos em uma div -->
+  <div class="container video-container" data-aos="fade-up">
+    <h2>Obrigado por sempre compartilhar sua vida e momentos comigo, suas dores, sua felicidade, porém tudo isso só aumenta o seu valor.</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    <i class="heart" style="top: 0; left: 40%;"></i>
+  </div>
+
+  <!-- Botão para Mensagem Final -->
+  <div class="container" data-aos="fade-up">
+    <button class="btn-surprise" onclick="window.location.href='mensagem-final.html'">
+      Clique
+    </button>
+    <i class="heart" style="top: 0; left: 55%;"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Feito com carinho por Boone Pê</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Controle de Música
+    const audio = document.getElementById('romantic-audio');
+    const toggleMusicBtn = document.getElementById('toggle-music');
+    let isPlaying = true;
+
+    toggleMusicBtn.addEventListener('click', () => {
+      if (isPlaying) {
+        audio.pause();
+        toggleMusicBtn.innerHTML = '<i class="fas fa-play"></i>';
+      } else {
+        audio.play();
+        toggleMusicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
